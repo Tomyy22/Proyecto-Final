@@ -41,7 +41,7 @@ body{
 
 .navbar{
     height: 100px;   
-    background: #e0e0e0 !important;
+    background: #bfd3fa !important;
 }
 
 .navbar-brand img{
@@ -61,17 +61,19 @@ body{
 .in-flex{
     flex: 2;
     min-width: 250px;
-    color: blanchedalmond;
+    color: rgb(171, 143, 102);
     padding: 25px;
     background: transparent;
-
+    filter: blur(2px);
     margin: 20px;
     margin-bottom: 0px;
     border: 2px solid;
     border-radius: 10px;
     transition: all 2s;
 }
-
+.in-flex:hover{
+    filter: blur(0px);
+}
 
 .top{
     margin-top: 200px;
@@ -100,6 +102,66 @@ body{
     margin-top: 200px;
 }
 
+footer{
+    height: 50px;
+    width: 100%;
+    background: #bfd3fa;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    justify-content: end;
+    align-items: end;
+    gap: 50px;
+}
+
+footer h3{
+    font-size: 15px;
+}
+
+i{
+    font-size: 30px;
+    color: #000;
+}
+
+.instagram i:hover{
+    color: #cc0ad6;
+    scale: 1.3;
+    transition: all 1s;
+}
+
+.twitter i:hover{
+    color: #2eaeee;
+    scale: 1.3;
+    transition: all 1s;
+}
+
+.facebook{
+    margin-right: 30px;
+}
+
+.facebook i:hover{
+    color: #231aca;
+    scale: 1.3;
+    transition: all 1s;
+}
+
+
+@media (max-width: 400px){
+    body{
+        background-position: left left;
+        background-size: 300vw 660vh;
+    }
+}
+
+@media (max-width: 440px){
+    i{
+      font-size: 15px; 
+    }
+    footer h3{
+        font-size: 9px;
+    }
+}
 
 
 
