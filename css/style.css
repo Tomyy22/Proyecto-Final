@@ -13,6 +13,9 @@ body{
     overflow-x: hidden;
 }
 
+
+/* ---------------------------------------------------------NavBar--------------------------------------------- */
+
 .navbar-brand{
  
     color: #198754 !important;
@@ -41,6 +44,7 @@ body{
 
 .navbar{
     height: 100px;   
+    width: 100%;
     background: #bfd3fa !important;
 }
 
@@ -53,9 +57,13 @@ body{
     scale: 1.2;
 }
 
+
+/* ---------------------------------------------------------Index--------------------------------------------- */
+
 .home{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .in-flex{
@@ -102,6 +110,43 @@ body{
     margin-top: 200px;
 }
 
+
+/* -------------------------------------------------------Contacto--------------------------------------------- */
+
+.input{
+    display: block;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: 75px;
+}
+input,select,textarea{
+    background-color: #bfd3fa;
+    color:#ab8f66 ;
+}
+
+ .form{
+    width: 600px;
+    height: 750px;
+    margin-bottom: 100px;
+} 
+
+#submit{
+    width: 70px;
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+}
+
+.input:focus{
+    background-color: #738dc1;
+    color: #000;
+    transition: all 1s;
+}
+
+/* ---------------------------------------------------------Footer--------------------------------------------- */
+
 footer{
     height: 50px;
     width: 100%;
@@ -147,6 +192,9 @@ i{
 }
 
 
+/* -----------------------------------------------MediaQuerysIndex--------------------------------------------- */
+
+
 @media (max-width: 400px){
     body{
         background-position: left left;
@@ -163,5 +211,54 @@ i{
     }
 }
 
+
+/*-----------------------------------------------MediaQuerysContacto------------------------------------------- */
+
+@media (max-width: 650px){
+    .form{
+        width: 400px;
+    }
+    .input{
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 22px;
+    }
+}
+    #submit{
+        margin-left: 240px;
+    }
+
+    @media (max-width: 452px){
+        .form{
+            width: 400px;
+            margin-left: 0;
+        }
+        .input{
+        width: 300px;
+        margin-bottom: 20px;
+        margin-left: 22px;
+        }
+        #submit{
+            margin-left: 250px;
+        }
+    }
+
+    
+    @media (max-width: 400px){
+        .form{
+            width: 300px;
+            margin-left: 0;
+            margin-top: 35px;
+        }
+        .input{
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 22px;
+        }
+        #submit{
+            margin-left: 150px;
+        }
+
+    }
 
 
