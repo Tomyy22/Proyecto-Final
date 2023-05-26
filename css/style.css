@@ -145,6 +145,67 @@ textarea{
     transition: all 1s;
 }
 
+.prueba{
+    background-image: none;
+}
+
+
+/* -------------------------------------------------------Bebidas--------------------------------------------- */
+
+.body-bebidas{
+    background-image: linear-gradient(to left, #738dc1 ,#bfd3fa)
+}
+
+.content{
+    max-width: 1100px;
+    width: 100%;
+    margin: 40px auto;
+    display: flex;
+}
+
+.contenedor-productos{
+    width: 100%;
+    transition: .5;  
+    flex-direction: column;
+}
+
+.contenedor-productos .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-productos .fila .producto{
+    max-width: 210px;
+    min-width: 210px;
+    padding: 30px;
+    height: 300px;
+    text-align: center;
+    margin: 30px 10px;
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: .5s;
+    background-image: linear-gradient(to bottom, #bfd3fa, wheat);
+    color: #198754;
+    font-weight: bold;
+}
+
+.contenedor-productos .fila .producto:hover{
+    background-image: none;
+    background: #bfd3fa;
+    transition: 2s;
+}
+
+.contenedor-productos .fila .producto img{
+    width: 100%;
+    margin: 30px 0;
+}
+
+
+
+
 /* ---------------------------------------------------------Footer--------------------------------------------- */
 
 footer{
@@ -214,7 +275,19 @@ i{
 
 /*-----------------------------------------------MediaQuerysContacto------------------------------------------- */
 
+@media (max-width: 988px){
+    .form{
+        margin-top: 150px;
+    }
+}
+
+
 @media (max-width: 650px){
+    .navbar-brand{
+        flex-direction: column !important;
+        font-size: 15px !important;
+       }
+
     .form{
         width: 400px;
     }
@@ -223,16 +296,23 @@ i{
     margin-bottom: 20px;
     margin-left: 22px;
     }
-}
+
     #submit{
         margin-left: 240px;
     }
+}
+
 
     @media (max-width: 452px){
         .form{
             width: 400px;
             margin-left: 0;
+            margin-top: 150px;
         }
+        .navbar-brand{
+            flex-direction: column !important;
+            font-size: 15px !important;
+           }
         .input{
         width: 300px;
         margin-bottom: 20px;
@@ -244,11 +324,16 @@ i{
     }
 
     
-    @media (max-width: 400px){
+    @media (max-width: 402px){
+        .navbar-brand{
+            flex-direction: column !important;
+            font-size: 10px !important;
+           }
+
         .form{
             width: 300px;
             margin-left: 0;
-            margin-top: 35px;
+            margin-top: 150px;
         }
         .input{
         width: 200px;
@@ -262,3 +347,69 @@ i{
     }
 
 
+
+
+
+/*------------------------------------------MediaQuerysBebidas--------------------------------------------------*/
+
+@media(max-width: 992px) {
+    
+    .contenedor-productos{
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+}
+
+
+@media(max-width: 490px) {
+    
+    .fila{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+
+    .contenedor-productos{
+        
+        margin-top: 220px;
+    }
+
+}
+
+@media(max-width: 462px){
+      .navbar{
+        height: 150px;
+      }
+}
+
+@media(max-width: 404px) {
+    
+    .fila{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+    }
+
+    .contenedor-productos{
+        
+        margin-top: 220px;
+    }
+}
+
+@media(max-width: 330px) {
+    
+    .fila{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .contenedor-productos{
+        
+        margin-top: 220px;
+    }
+}
