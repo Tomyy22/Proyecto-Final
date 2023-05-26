@@ -181,7 +181,6 @@ textarea {
   text-align: center;
   margin: 30px 10px;
   border-radius: 30px;
-  transition: 0.5s;
   background-image: linear-gradient(
     to bottom,
     #bfd3fa,
@@ -206,6 +205,29 @@ textarea {
 a {
   text-decoration: none;
 }
+
+.info-2{
+  display: none;
+}
+
+.contenedor-productos .fila .producto:hover{
+
+  .info{
+    display: none;
+  }
+
+  .info-2{
+    display: block;
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
 
 /* --------------------------------------------------------Comidas--------------------------------------------- */
 
