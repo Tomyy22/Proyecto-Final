@@ -108,7 +108,7 @@ body {
 
 /* -------------------------------------------------------Contacto--------------------------------------------- */
 
-.body-contacto{
+.body-contacto {
   background-image: url(../img/background2.jpeg);
 }
 
@@ -170,7 +170,6 @@ textarea {
   display: flex;
   justify-content: space-around;
   margin-bottom: 40px;
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -181,10 +180,14 @@ textarea {
   height: 300px;
   text-align: center;
   margin: 30px 10px;
-  cursor: pointer;
   border-radius: 30px;
   transition: 0.5s;
-  background-image: linear-gradient(to bottom, rgb(253, 230, 187),rgb(204, 158, 72));
+  background-image: linear-gradient(
+    to bottom,
+    #bfd3fa,
+    wheat,
+    rgba(255, 188, 63, 0.68)
+  );
   color: #198754;
   font-weight: bold;
 }
@@ -200,9 +203,20 @@ textarea {
   margin: 30px 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
+
+/* --------------------------------------------------------Comidas--------------------------------------------- */
+
+.comidas {
+  height: 100vh;
+}
+
+.fila-comida {
+  margin-top: 150px;
+}
+
 /* ---------------------------------------------------------Footer--------------------------------------------- */
 
 footer {
@@ -251,14 +265,14 @@ i {
 
 /* -----------------------------------------------MediaQuerysIndex--------------------------------------------- */
 
-@media (max-width: 930px){
-  body{
-     background-size: 200vw 500vh; 
+@media (max-width: 930px) {
+  body {
+    background-size: 200vw 500vh;
   }
 }
 
-@media (max-width:550px){
-  body{
+@media (max-width: 550px) {
+  body {
     background-size: 200vw 550vh;
   }
 }
@@ -281,16 +295,15 @@ i {
   }
 }
 
-
 @media (max-width: 440px) {
-   i {
+  i {
     font-size: 17px;
   }
   footer h3 {
     font-size: 11px;
-  } 
+  }
 
-  footer{
+  footer {
     justify-content: center;
   }
 }
@@ -327,7 +340,6 @@ i {
 }
 
 @media (max-width: 402px) {
-
   .form {
     width: 300px;
     margin-left: 0;
@@ -354,7 +366,6 @@ i {
 }
 
 @media (max-width: 490px) {
-
   .contenedor-productos {
     margin-top: 220px;
   }
@@ -366,3 +377,10 @@ i {
   }
 }
 
+/*------------------------------------------MediaQuerysComidas--------------------------------------------------*/
+
+@media (max-width: 992px) {
+  .fila-comida {
+    margin-top: 0;
+  }
+}
