@@ -28,9 +28,10 @@
 
     <!-- Link de css -->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Contacto</title>
+
+    <title>Tés Calientes</title>
   </head>
-  <body class="body-contacto">
+  <body class="body-bebidas">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -69,7 +70,7 @@
                     <a class="dropdown-item" href="./bebidas.html">Bebidas</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Comidas</a></li>
+                  <li><a class="dropdown-item" href="">Comidas</a></li>
                 </ul>
               </li>
             </ul>
@@ -88,59 +89,51 @@
       </nav>
     </header>
 
-    <main class="container form-container">
-      <section class="home">
-        <div class="form">
-          <form>
-            <div class="inputs in-flex form">
-              <label class="input" for="nombre">Nombre:</label>
-              <input
-                class="input"
-                type="text"
-                name="nombre"
-                autocomplete="off"
-                required
-              />
-              <label class="input" for="apellido">Apellido:</label>
-              <input
-                class="input"
-                type="text"
-                name="apellido"
-                autocomplete="off"
-                required
-              />
-              <label class="input" for="email">Email:</label>
-              <input
-                class="input"
-                type="email"
-                name="email"
-                autocomplete="off"
-                required
-              />
-              <label class="input" for="asunto">Asunto:</label>
-              <select
-                class="input"
-                name="asunto"
-                id="select"
-                autocomplete="off"
-              >
-                <option value="">Consulta sobre productos</option>
-                <option value="">Comentarios sobre el servicio</option>
-                <option value="">Sugerencias para mejorar</option>
-                <option value="">Problemas tecnicos en la pagina web</option>
-              </select>
-              <label class="input" for="consulta">Mensaje:</label>
-              <textarea
-                class="input"
-                name="consulta"
-                cols="40"
-                rows="10"
-              ></textarea>
-              <input class="input" type="submit" id="submit" />
+    <main class="container content">
+      <div class="contenedor-productos" id="contenedor-productos">
+        <div class="fila">
+          <div class="producto">
+            <div class="foto">
+              <img src="../img/mint-citrus.png" alt="mint-citrus" />
+              <p class="info">Mint Citrus</p>
             </div>
-          </form>
+          </div>
+          <div class="producto">
+            <div class="foto">
+              <img src="../img/chai.png" alt="chai" />
+              <p class="info">Chai</p>
+            </div>
+          </div>
         </div>
-      </section>
+        <div class="fila">
+          <div class="producto">
+            <div class="foto">
+              <img src="../img/youthberry.png" alt="youthberry" />
+              <p class="info">YouthBerry</p>
+            </div>
+          </div>
+          <div class="producto">
+            <div class="foto">
+              <img src="../img/hibiscus.png" alt="hibiscus" />
+              <p class="info">Hibiscus</p>
+            </div>
+          </div>
+        </div>
+        <div class="fila">
+          <div class="producto">
+            <div class="foto">
+              <img src="../img/earl-grey.png" alt="earl-grey" />
+              <p class="info">Earl Grey</p>
+            </div>
+          </div>
+          <div class="producto">
+            <div class="foto">
+              <img src="../img/english-breakfast.png" alt="english-breakfast" />
+              <p class="info">English Breakfast</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
