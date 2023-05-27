@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Oxygen", sans-serif;
   font-size: 20px;
+  list-style: none;
 }
 
 body {
@@ -26,7 +27,6 @@ body {
 .dropdown-toggle {
   color: #198754 !important;
 }
-
 .dropdown-toggle:hover {
   color: #15bb03 !important;
 }
@@ -52,6 +52,10 @@ body {
 
 .navbar-brand img:hover {
   scale: 1.2;
+}
+
+.ocultar{
+  display: none;
 }
 
 /* ---------------------------------------------------------Index--------------------------------------------- */
@@ -106,6 +110,23 @@ body {
   margin-bottom: 100px;
 }
 
+.search-container{
+  margin-right: -50px;
+  margin-top: 100px;
+  height: 300px;
+  max-width: 250px;
+  filter: none;
+  padding: 0px;
+  display: flex;
+}
+
+.search-container ul li{
+  color: #ab8f66;
+}
+.search-container ul li:hover{
+  color: #764700;
+}
+
 /* -------------------------------------------------------Contacto--------------------------------------------- */
 
 .body-contacto {
@@ -145,6 +166,11 @@ textarea {
   background-color: #738dc1;
   color: #000;
   transition: all 1s;
+}
+
+.test{
+  display: flex;
+  justify-content: center;
 }
 
 /* -------------------------------------------------------Bebidas--------------------------------------------- */
@@ -330,6 +356,102 @@ i {
   }
 }
 
+
+/*----------------------------------------------MediaQuerysSearchBar------------------------------------------- */
+
+@media (max-width:1475px){
+  .in-flex{
+    margin-top: 150px;
+  }
+}
+@media (max-width:1056px){
+  .search-container{
+    margin-right: 20px
+  }
+}
+
+@media (max-width:992px){
+
+  .in-flex{
+      margin-top: 200px;
+  }
+
+  .search-container{
+      margin-right: 20px;
+  }
+}
+
+@media (max-width: 931px){
+body{
+  background-size: 660vh 500vw;
+  background-position-x:-500px ;
+}
+}
+
+@media(max-width:815px){
+  body{
+    background-size: 800vh 600vw;
+}
+}
+
+@media (max-width:767px){
+  .in-flex{
+      margin-top: 620px;
+      margin-bottom: 20px;
+      position: absolute;
+  }
+
+  .search-container{
+      margin-top: 100px;
+      width: 200px;
+      margin-bottom: 20px;
+  }
+
+  .picture-container{
+      display: none;
+  }
+
+  body{
+      background-size: 200vw 700vh;
+      background-position-x:0px ;
+  }
+  .bottom{
+    margin-top: 2500px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 445px){
+.picture-container{
+  margin-top: 1750px;
+  }
+}
+
+
+@media (max-width:353px){
+  .in-flex{
+      margin-top: 660px;
+  }
+  .search-container{
+      margin-top: 320px;
+      width: 200px;
+      margin-bottom: 20px;
+  }
+
+  .picture-container{
+      display: none;
+  }
+  body{
+      background-size: 200vw 820vh;
+  }
+  .bottom{
+      margin-top: 2500px;
+      margin-bottom: 20px;
+  } 
+}
+
+
+
 /*-----------------------------------------------MediaQuerysContacto------------------------------------------- */
 
 @media (max-width: 988px) {
@@ -385,6 +507,9 @@ i {
     justify-content: center;
     margin-top: 200px;
   }
+  .navbar {
+    height: 400px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -395,7 +520,7 @@ i {
 
 @media (max-width: 462px) {
   .navbar {
-    height: 150px;
+    height: 400px;
   }
 }
 
