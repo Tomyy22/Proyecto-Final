@@ -29,9 +29,9 @@
     <!-- Link de css -->
     <link rel="stylesheet" href="../css/style.css" />
 
-    <title>Sandwichs Y Tartas</title>
+    <title>Comidas</title>
   </head>
-  <body class="body-bebidas">
+  <body class="body-bebidas comidas recomen">
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -81,59 +81,37 @@
       </nav>
     </header>
 
-    <main class="container content">
-      <div class="contenedor-productos" id="contenedor-productos">
-        <div class="fila">
-          <div class="producto">
-            <div class="foto">
-              <img src="../img/focaccia-caprese.png" alt="focaccia-caprese" />
-              <p class="info">Foccacia Caprese</p>
-              <p class="info-2">Focaccia con queso y tomate</p>
-            </div>
-          </div>
-          <div class="producto">
-            <div class="foto">
-              <img src="../img/croque-monseirpng.png" alt="croque-monseir" />
-              <p class="info">Croque Monsieur</p>
-              <p class="info-2">Jamon,queso y salsa bechamel</p>
-            </div>
-          </div>
+    <section class="contenido-clima">
+      <div class="home-clima">
+        <span>
+          <h1>Que le recomendamos consumir hoy?</h1>
+        </span>
+        <div class="result">
+          <p>Ingrese Ciudad y Pais</p>
         </div>
-        <div class="fila">
-          <div class="producto">
-            <div class="foto">
-              <img src="../img/tostado-jyq.png" alt="tostado-jyq" />
-              <p class="info">Tostado JyQ</p>
-              <p class="info-2">Triángulo de jamón y queso</p>
-            </div>
-          </div>
-          <div class="producto">
-            <div class="foto">
-              <img src="../img/bagel-sandwichspng.png" alt="bagel-sandwichs" />
-              <p class="info">Bagel Sandwich</p>
-              <p class="info-2">Bagel con cheddar y panceta</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="fila">
-          <div class="producto">
-            <div class="foto">
-              <img src="../img/tarta-puerro.png" alt="tarta-puerro" />
-              <p class="info">Tarta de Puerro</p>
-              <p class="info-2">Tarta de puerro, cebolla y queso</p>
-            </div>
-          </div>
-          <div class="producto">
-            <div class="foto">
-              <img src="../img/tarta-calabaza.png" alt="tarta-calabaza" />
-              <p class="info">Tarta de Calabaza</p>
-              <p class="info-2">Masa integral con calabaza y queso</p>
-            </div>
-          </div>
+        <form action="" method="" class="clima">
+          <input type="text" id="ciudad" class="input-clima" autocomplete="off" />
+          <select id="pais">
+            <option disabled selected value="">Seleccione Opcion</option>
+            <option value="AR">Argentina</option>
+            <option value="BO">Bolivia</option>
+            <option value="BR">Brasil</option>
+            <option value="CL">Chile</option>
+            <option value="CO">Colombia</option>
+            <option value="EC">Ecuador</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Peru</option>
+            <option value="UY">Uruguay</option>
+          </select>
+          <input type="submit" class="input-clima" value="Recomendame" />
+        </form>
+      </div>
+      <div class="home-clima">
+        <div class="recom">
+          <p>Le recomendamos</p>
         </div>
       </div>
-    </main>
+    </section>
 
     <footer>
       <h3>&copy; Derechos Reservados StarbucksCompany</h3>
@@ -162,5 +140,7 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- Link JavaScript -->
+    <script src="../js/script.js"></script>
   </body>
 </html>
