@@ -128,7 +128,7 @@ body {
   color: #764700;
 }
 
-.tabla-container{
+.tabla-container {
   display: flex;
   justify-content: center;
   margin-right: 50px;
@@ -154,13 +154,12 @@ body {
 }
 
 .celda a {
-  color: #bfd3fa
+  color: #bfd3fa;
 }
 
 .titulo {
   color: #5c56cb;
 }
-
 
 /* -------------------------------------------------------Contacto--------------------------------------------- */
 
@@ -439,6 +438,11 @@ i {
     justify-content: center;
   }
 }
+@media (max-width: 767px) {
+  .tabla {
+    margin-right: 40px;
+  }
+}
 
 @media (max-width: 420px) {
   .tabla {
@@ -447,8 +451,8 @@ i {
   .tabla420px {
     display: table;
   }
-  .celda{
-     color: #198754;
+  .celda {
+    color: #198754;
   }
 }
 

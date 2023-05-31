@@ -1,4 +1,4 @@
-//SearchBar
+//------------------------------------------------SearchBar-------------------------------------------------------
 
 document.addEventListener("keyup", (e) => {
   if (e.target.matches("#searchbar")) {
@@ -19,7 +19,7 @@ document.addEventListener("keyup", (e) => {
   }
 });
 
-//Recomendacion
+//-------------------------------------------------Recomendacion--------------------------------------------------
 
 const result = document.querySelector(".result");
 const form = document.querySelector(".clima");
@@ -119,7 +119,7 @@ function mostrarClima(data) {
     recom.appendChild(ran1);
     setTimeout(() => {
       ran1.remove();
-    }, 2000);
+    }, 3000);
   } else {
     const ran2 = document.createElement("a");
     if (random2 === arr2[0]) {
