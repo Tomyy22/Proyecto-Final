@@ -177,7 +177,7 @@ body {
 input,
 select,
 textarea {
-  background-color: #bfd3fa;
+  background-color: #198754;
   color: #ab8f66;
 }
 
@@ -198,7 +198,7 @@ textarea {
 }
 
 .input:focus {
-  background-color: #738dc1;
+  background-color: #1a6542;
   color: #000;
   transition: all 1s;
 }
@@ -211,7 +211,7 @@ textarea {
 /* -------------------------------------------------------Bebidas--------------------------------------------- */
 
 .body-bebidas {
-  background-image: linear-gradient(to left, #738dc1, #bfd3fa);
+  background-image: linear-gradient(to left, #198754, #6ac69b);
 }
 
 .content {
@@ -242,12 +242,8 @@ textarea {
   text-align: center;
   margin: 30px 10px;
   border-radius: 30px;
-  background-image: linear-gradient(
-    to bottom,
-    #bfd3fa,
-    wheat,
-    rgba(255, 188, 63, 0.68)
-  );
+  border: 2px #15bb03 solid;
+  background-image: linear-gradient(to bottom, #198754,#15be6f);
   color: #198754;
   font-weight: bold;
 }
@@ -309,25 +305,25 @@ a {
 .home-clima {
   display: grid;
   width: 320px;
-  border: 4px solid #ab8f66;
+  border: 4px solid #15bb03;
   border-radius: 40px;
   height: auto;
   padding: 15px;
   gap: 30px;
-  background-color: #bfd3fa;
+  background-color: #198754;
   transition: all 1s;
   margin-bottom: 40px;
 }
 
 .home-clima a {
-  color: #ab8f66;
+  color: #000;
 }
 
 .home-clima a:hover {
   color: #764700;
 }
 .home-clima h1 {
-  color: #198754;
+  color: #000;
   font-size: 30px;
   transition: all 1s;
 }
@@ -411,14 +407,15 @@ i {
 
 @media (max-width: 735px) {
   .index-body {
-    background-image: linear-gradient(to left, #738dc1, #bfd3fa);
+    /* background-image: linear-gradient(to left, #738dc1, #bfd3fa); */
+    background-image: linear-gradient(to bottom, #198754,#525f58);
   }
 
   .tabla #item {
-    color: #198754;
+    color: #0eadbf;
   }
   .tabla li {
-    color: #15bb03;
+    color: #488589;
   }
 
   #title {
@@ -512,7 +509,8 @@ i {
   }
 
   .picture-container {
-    display: none;
+    display: block;
+    margin-top: 1500px;
   }
 
   body {
@@ -520,7 +518,7 @@ i {
     background-position-x: 0px;
   }
   .bottom {
-    margin-top: 2500px;
+    margin-top: 300px;
     display: flex;
     justify-content: center;
     margin-left: 100px;
